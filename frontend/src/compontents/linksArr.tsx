@@ -9,12 +9,12 @@ interface linksI {
     userAdmin: String
 }
 
-const LinksArr = ({link, key, username, setLinks, userAdmin}: linksI) => {
+const LinksArr = ({link, username, setLinks, userAdmin}: linksI) => {
     const [shereCopied, setShereCopied] = useState<Boolean>(false)
     function delL(name: string) { del(name, username, setLinks) }
     function shereL(link: string) { shere(link, setShereCopied) }
     return (<>
-    <div className="link" key={key}>
+    <div className="link">
         <div className="left">
             <div className="title">{link.name}</div>
             { userAdmin == "true" && <a className="originalLink" href={link.originalLink}>{link.originalLink}</a> }
