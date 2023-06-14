@@ -1,0 +1,6 @@
+{"userId":"664df520-b820-4260-91b3-5b10d744d5c0","username":"cristichiu","password":"test","_id":"6srbsNbbtNQd6qWh"}
+{"userId":"3db69268-9788-4cdc-bee7-dc56fe862e41","username":"newCont","password":"test","_id":"Gx7rPl4WJOtIqt6I"}
+{"userId":"57c829e8-64c4-4e8a-97c4-9fee59145f6d","username":"cristichiu1","password":"idk","_id":"a8xnLAzv0POUAJlj"}
+{"userId":"5e46752d-c022-47aa-aebe-84b5a4ac104d","username":"idk","password":"idk","_id":"cFLgMGThskmp3thY"}
+{"userId":"6490be29-8cc6-4f59-b08c-f2a2ca9f95b0","username":"testing","password":"test","_id":"sWO1kCicmvEvbDu4"}
+{"userId":"c29d090d-6e0b-4bf9-bed0-37534f152919","username":"Cristian","password":"idk","_id":"t6QsDQdTVUAc7wAe"}
