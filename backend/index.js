@@ -1,12 +1,12 @@
 const express = require('express')
 const app = express()
 const port = 3000
+require('dotenv').config();
 
-const Datastore = require('nedb')
-const userDB = new Datastore({ filename: './databse/user.txt' });
-const linkDB = new Datastore({ filename: './databse/link.txt' });
-userDB.loadDatabase(function (err) { if(err) { console.log(err) } else { console.log("user database - run") } });
-linkDB.loadDatabase(function (err) { if(err) { console.log(err) } else { console.log("link database - run") } });
+const mongoose = require("mongoose")
+mongoose.connect(process.env.MONGO).then(() => console.log("MongoDB conectat"))
+const userDB = require("./databse/user")
+const linkDB = require("./databse/link")
 module.exports = { userDB, linkDB }
 
 const userRouter = require('./routers/user')

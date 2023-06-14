@@ -1,8 +1,8 @@
 const findAllLinks = require('./findAllLinks')
 
-function deleteLink(req, res, linkDB) {
+async function deleteLink(req, res, linkDB) {
     const { username, name } = req.body
-    linkDB.remove({ username, name })
+    await linkDB.findOneAndDelete({ username, name }).catch((error) => { console.log(error) })
     findAllLinks(req, res, username, linkDB)
 }
 

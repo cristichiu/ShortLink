@@ -1,17 +1,16 @@
 const { v4: uuidv4 } = require('uuid');
 
-function register(req, res, userDB) {
+async function register(req, res, userDB) {
     const { username, password } = req.body
-    userDB.findOne({ username }, function(err, docs) {
+    await userDB.findOne({ username }).then(async (docs) => {
         if(!docs) {
-            userDB.insert({ userId: uuidv4(), username, password }, function(err, docs) {
-                if(err) return res.json({error: true, message: "Ceva nu a mers cum trebuie:("})
+            await userDB.create({ userId: uuidv4(), username, password }).then((docs) => {
                 res.json({error: false, userId: docs.userId})
-            })
+            }).catch((error) => {res.json({error: true, message: "Ceva nu a mers cum trebuie:("}); console.log(error)})
         } else {
             res.json({error: true, message: "Cineva utilizează deja acest username."})
         }
-    })
+    }).catch((error) => { res.json({error: true, message: "Ceva nu a mers cum trebuie:("}); console.log(error) })
 }
 
 module.exports = register

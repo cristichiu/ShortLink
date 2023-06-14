@@ -1,6 +1,0 @@
-{"username":"cristichiu","name":"Instagram","originalLink":"https://www.instagram.com/cristichiu/","persLink":"insta","clicks":1,"_id":"JSlww7s6UUYcQHAL"}
-{"username":"cristichiu1","name":"cv","originalLink":"https://cv.cristichiu.repl.co/home","persLink":"cv","clicks":15,"_id":"PvthvzLU4mHzXQ1r"}
-{"username":"cristichiu","name":"CV-ul meu","originalLink":"https://cvv2.cristichiu.repl.co/home","persLink":"cv","clicks":0,"_id":"TfiXZrX3nRfdOBZL"}
-{"username":"idk","name":"test","originalLink":"https://www.google.com/search?q=check+if+string+is+a+url+javascript&rlz=1C1CHBF_frFR1016FR1016&oq=verify+if+string+is+a+url&aqs=chrome.1.69i57j0i22i30l9.6084j0j7&sourceid=chrome&ie=UTF-8","persLink":"nuj","clicks":1,"_id":"VK0JKE0fycHnB0im"}
-{"username":"cristichiu","name":"Discord","originalLink":"https://discordapp.com/users/530059275754799116","persLink":"dis","clicks":0,"_id":"z7TnLl5ZvoTDPGOB"}
-{"username":"cristichiu","name":"test","originalLink":"https://www.google.com/search?q=check+if+string+is+a+url+javascript&rlz=1C1CHBF_frFR1016FR1016&oq=verify+if+string+is+a+url&aqs=chrome.1.69i57j0i22i30l9.6084j0j7&sourceid=chrome&ie=UTF-8","persLink":"link","clicks":0,"_id":"wG7zKo7UwnfTYc9l"}
