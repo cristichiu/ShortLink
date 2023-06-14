@@ -6,7 +6,7 @@ interface userDataI {
 import axios from "axios"
 
 function login(userData: userDataI, navigate: any, setErrorMessage: any) {
-    setErrorMessage("Această acțiune ar pute dura un pic.")
+    setErrorMessage("Această acțiune ar putea dura un pic.")
     if(userData.username == "") return setErrorMessage("Trebuie să-ți pui un username!")
     if(userData.password == "") return setErrorMessage("Trebuie să-ți pui o parolă!")
     axios.post(import.meta.env.VITE_BACKEND_LINK + "/login", userData).then(res => {

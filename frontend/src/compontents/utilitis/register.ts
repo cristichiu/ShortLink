@@ -7,7 +7,7 @@ interface userDataI {
 import axios from "axios"
 
 function register(userData: userDataI, navigate: any, setErrorMessage: any) {
-    setErrorMessage("Această acțiune ar pute dura un pic.")
+    setErrorMessage("Această acțiune ar putea dura un pic.")
     if(userData.username == "") return setErrorMessage("Trebuie să-ți pui un username!")
     if(userData.password == "") return setErrorMessage("Trebuie să-ți pui o parolă!")
     if(userData.password != userData.confirm) return setErrorMessage("Confirmare parolă trebuie să fie la fel ca parola!")
